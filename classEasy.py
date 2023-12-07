@@ -9,7 +9,7 @@ import streamlit as st
 os.environ["OPENAI_API_KEY"] = "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"
 
 
-with open(r'F:\Fall 23\CSE470\Project\Fine-Tuning-ChatGPT-main\classEasy Chatbot\vectordb.pkl', 'rb') as f:
+with open('/vectordb.pkl', 'rb') as f:
     db = pickle.load(f)
 
 
