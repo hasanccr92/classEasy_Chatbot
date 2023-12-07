@@ -9,7 +9,7 @@ import streamlit as st
 os.environ["OPENAI_API_KEY"] = "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"
 
 
-with open('/vectordb.pkl', 'rb') as f:
+with open('vectordb.pkl', 'rb') as f:
     db = pickle.load(f)
 
 
