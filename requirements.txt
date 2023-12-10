@@ -1,9 +1,7 @@
 langchain
-python-dotenv
-streamlit
-tiktoken
 faiss-cpu
-libmagic
 openai==0.28.1
-pandas
+tiktoken
 transformers
+streamlit
+textract
