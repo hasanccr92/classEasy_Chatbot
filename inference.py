@@ -3,10 +3,10 @@ import os
 import shutil
 from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
-
 import streamlit as st
+from dotenv import load_dotenv
 
-os.environ["OPENAI_API_KEY"] = "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"
+load_dotenv()
 
 
 with open('vectordb.pkl', 'rb') as f:
