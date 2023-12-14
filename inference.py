@@ -4,10 +4,7 @@ import shutil
 from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 import streamlit as st
-from dotenv import load_dotenv
-
-load_dotenv()
-
+os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
 
 with open('vectordb.pkl', 'rb') as f:
     db = pickle.load(f)
