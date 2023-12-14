@@ -7,6 +7,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from transformers import GPT2TokenizerFast
 from pdfTOtxt import make_text
 
+os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
+
 '''put the pdf name here'''
 make_text('merged.pdf')
 
@@ -23,7 +25,6 @@ text_splitter = RecursiveCharacterTextSplitter(
     length_function = count_tokens,
 )
 
-os.environ["OPENAI_API_KEY"] = "Your_API_KEY"
 
 chunks = text_splitter.create_documents([text])
 embeddings = OpenAIEmbeddings()
