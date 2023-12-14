@@ -23,7 +23,7 @@ text_splitter = RecursiveCharacterTextSplitter(
     length_function = count_tokens,
 )
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "Your_API_KEY"
 
 chunks = text_splitter.create_documents([text])
 embeddings = OpenAIEmbeddings()
